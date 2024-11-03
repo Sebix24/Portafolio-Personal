@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sebastian Dev🐱‍👓</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Tiny5&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-header">
+        <header>
+            <div class="logo">
+                <h2><span class="typeded"></span></h2>
+                <!--<a href="#">SebastianDev</a>-->
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home" onclick="selec()">HOME</a></li>
+                    <li><a href="#about" onclick="selec()">ABOUT</a></li>
+                    <li><a href="#skills" onclick="selec()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="selec()">CURRICULUM</a></li>
+                    <li><a href="#works" onclick="selec()">WORKS</a></li>
+                    <li><a href="#contact" onclick="selec()">CONTACT</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="showHiddenMenu()">
+                <i class="fa-solid fa-list"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--Section main-->
+    <section id="home" class="home">
+        <div class="container-banner scroll-1">
+            <div class="container-img scroll-2">
+                <img src="./img/undraw_Pic_profile_re_7g2h22222222.png" alt="photo">
+            </div>
+            <h1 class="scroll-3">Sebastian Gutierrez</h1>
+            <h2 class="scroll-3">Software Developer - Front-End</h2>
+            <div class="redes scroll-4">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!--About Me-->
+    <section id="about" class="about">
+        <div class="content-section">
+            <h2 class="about-scroll-1">ABOUT ME</h2>
+            <p class="about-scroll-2"><span>Hello, I'm Sebastian Gutierrez</span> I am a 21-year-old young man passionate about technology, sports, especially soccer and video games. I am a dynamic person, happy and committed to what I do. I am always willing to learn new things and learn from my colleagues. I stand out for my camaraderie, and for being a good person in my social environment.!</p>
+
+            <div class="file">
+                <!--Personal Dates-->
+                <div class="col">
+                    <h3 class="about-scroll-3">PERSONAL DATES</h3>
+                    <ul class="about-scroll-4">
+                        <li>
+                            <strong>BirdthDay:</strong>
+                            24-06-2003
+                        </li>
+                        <li>
+                            <strong>Number:</strong>
+                            +57 322 2958622
+                        </li>
+                        <li>
+                            <strong>Email:</strong>
+                            sebas.gutierrez.2406@iCloud.com
+                        </li>
+                        <li>
+                            <strong>From:</strong>
+                            Bogotá - Colombia
+                        </li>
+                        <li>
+                            <strong>Certification:</strong>
+                            <span>Politecnico Internacional</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--Hobbits-->
+                <div class="col">
+                    <h3 class="about-scroll-5">HOBBIES</h3>
+                    <div class="container-hobbit about-scroll-6">
+                        <div class="hobbit">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>VIDEOGAMES</span>
+                        </div>
+                        <div class="hobbit">
+                            <i class="fa-brands fa-spotify"></i>
+                            <span>MUSIC</span>
+                        </div>
+                        <div class="hobbit">
+                            <i class="fa-regular fa-futbol"></i>
+                            <span>SOCCER</span>
+                        </div>
+                        <div class="hobbit">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>TRAVELLING</span>
+                        </div>
+                        <div class="hobbit">
+                            <i class="fa-solid fa-microchip"></i>
+                            <span>TECNOLOGY</span>
+                        </div>
+                        <div class="hobbit">
+                            <i class="fa-solid fa-laptop"></i>
+                            <span>PROGRAMING</span>
+                        </div>
+                        <div class="hobbit">
+                            <i class="fa-solid fa-tv"></i>
+                            <span>MOVIES</span>
+                        </div>
+                        <div class="hobbit">
+                            <i class="fa-solid fa-book"></i>
+                            <span>READ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<button>
+                <a href="./downloads/Sebastian Gutierrez.pdf" download="Curriculum-Sebastian Gutierrez" class="download-button"></a>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>-->
+            <a href="./downloads/Sebastian Gutierrez.pdf" download="Curriculum-Sebastian Gutierrez" class="download-button botton-scroll">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </a>
+        </div>
+    </section>
+
+    <!--Skills-->
+    <section id="skills" class="skills">
+        <div class="content-section">
+            <h2 class="skills-scroll">SKILLS</h2>
+            <div class="file">
+                <!--Technical Skills-->
+                <div class="col skills-scroll-2">
+                    <h3>TECHNICAL SKILLS</h3>
+                    <div class="skill">
+                        <span>
+                            HTML
+                            <i class="fa-brands fa-html5"></i>
+                        </span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>
+                            CSS
+                            <i class="fa-brands fa-css3-alt"></i>
+                        </span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>
+                            JavaScript 
+                            <i class="fa-brands fa-square-js"></i>
+                        </span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>
+                            Java 
+                            <i class="fa-brands fa-java"></i>
+                        </span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>
+                            Python 
+                            <i class="fa-brands fa-python"></i>
+                        </span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>
+                            SQLserver 
+                            <i class="fa-solid fa-database"></i>
+                        </span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Professional Skills-->
+                <div class="col skills-scroll-2">
+                    <h3>PROFESSIONAL SKILLS</h3>
+                    <div class="skill">
+                        <span>
+                            Teamwork
+                            <i class="fa-solid fa-handshake"></i>
+                        </span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>
+                            Creativity
+                            <i class="fa-brands fa-creative-commons-remix"></i>
+                        </span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>
+                            Commitment
+                            <i class="fa-solid fa-gear"></i>
+                        </span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>
+                            Communication
+                            <i class="fa-solid fa-comment"></i>
+                        </span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>
+                            Dedication
+                            <i class="fa-solid fa-fire"></i>
+                        </span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>
+                            Adaptability
+                            <i class="fa-solid fa-code-compare"></i>
+                        </span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>
+                            English
+                            <i class="fa-solid fa-language"></i>
+                        </span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>
+                            Spanish
+                            <i class="fa-solid fa-language"></i>
+                        </span>
+                        <div class="bar-skill">
+                            <div class="progress">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Curriculum Vitae-->
+    <section id="curriculum" class="curriculum">
+        <div class="content-section">
+            <h2 class="curriculum-scroll">CURRICULUM</h2>
+            <div class="file">
+                <div class="col left">
+                    <h3 class="curriculum-scroll">Certification</h3>
+                    <div class="item left curriculum-scroll-2">
+                        <h4>Software and mobile application development engineer</h4>
+                        <span class="house">Politecnico Internacional</span>
+                        <span class="date">2020 - 2023</span>
+                        <p>At the International Polytechnic, I learned about all the concepts of programming and its structures. During the three years of my degree, I had the opportunity to work with various programming languages, carrying out different projects and gaining experience with them. Because of this, I developed a great love for the world of technology, and I want to continue learning.
+                        </p>
+                        <div class="conect">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                    <div class="item left curriculum-scroll-2">
+                        <h4>Certification Responsive Web Design</h4>
+                        <span class="house">UDemy Academy</span>
+                        <span class="date">2023 - 2023</span>
+                        <p>With online courses, I learned even more about programming languages and best practices in programming. In this case, through the Udemy course, I learned how to create responsive web projects that adapt to any device, as well as gaining a broader understanding of HTML and CSS technologies.
+                        </p>
+                        <div class="conect">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                    <div class="item left curriculum-scroll-2">
+                        <h4>Certification JavaScript Algorithms and Data Structures</h4>
+                        <span class="house">UDemy</span>
+                        <span class="date">2023 - 2023</span>
+                        <p>With this online course, I was able to learn the JavaScript programming language. Through this course, I understood its logic and structures, allowing me to create independent programs and integrate them with other technologies. I found this language easy to use; however, I want to continue learning more about its features and utilities in this wonderful language.
+                        </p>
+                        <div class="conect">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                    <div class="item left curriculum-scroll-2">
+                        <h4>Certification Front End Development Libraries (React)</h4>
+                        <span class="house">UDemy</span>
+                        <span class="date">2024 - 2024</span>
+                        <p>When I finished my JavaScript course, I was introduced to a new technology, which is currently one of the most used for designing and programming applications. React was the third technology I learned; the course I took allowed me to understand its structure and logic, enabling me to create various applications and web designs. My desire is to improve my skills and take them to a professional level.
+                        </p>
+                        <div class="conect">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                    <div class="item left curriculum-scroll-2">
+                        <h4>Certification Python for Everybody</h4>
+                        <span class="house">UDemy</span>
+                        <span class="date">2024 - 2024</span>
+                        <p>Python is a recent language for me; I became interested in the topics of automation and AI, which is why I decided to get involved with this technology. It has been a great experience working with Python. So far, I have been able to create various simple projects to gradually improve my skills.
+                        </p>
+                        <div class="conect">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col right">
+                    <h3 class="curriculum-scroll">Experience</h3>
+                    <div class="item right curriculum-scroll-3">
+                        <h4>Front-End Developer</h4>
+                        <span class="house">Rappi Colombia</span>
+                        <span class="date">2021 - 2022</span>
+                        <p>At RAPPI, I was able to complete my first internship. It was an incredible experience as I got to work with highly experienced developers on a large project like the RAPPI app, which is one of the most used apps in my country today. During this internship, I was able to apply my knowledge as a front-end developer, supporting the technological design aspect and acquiring new knowledge.
+                        </p>
+                        <div class="conecta">
+                            <div class="circulo"></div>
+                        </div>
+                    </div>
+
+                    <div class="item right curriculum-scroll-3">
+                        <h4>Front-End Developer</h4>
+                        <span class="house">ACH Colombia</span>
+                        <span class="date">2021 - 2022</span>
+                        <p>At ACH Colombia, I was able to utilize my skills as a front-end developer again. ACH is a company that specializes in payment gateways in my country. I had the experience of working on the interface for payment buttons like PSE and Transfiya. I supported the design and development of both buttons, acquiring new knowledge in both front-end and back-end development.
+                        </p>
+                        <div class="conecta">
+                            <div class="circulo"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="item right curriculum-scroll-3">
+                        <h4>FREELANCE Front-End Developer</h4>
+                        <span class="house">H&C Food</span>
+                        <span class="date">2023 - 2023</span>
+                        <p>For H&C Food, I designed a website that would help increase the company's online sales. The design of the site consisted of showcasing different products with a pleasant and intuitive interface for the user. The website allowed users to choose whether to have their products delivered or to pick them up in-store.?
+                        </p>
+                        <div class="conecta">
+                            <div class="circulo"></div>
+                        </div>
+                    </div>
+
+                    <div class="item right curriculum-scroll-3">
+                        <h4>FREELANCE Front-End Developer</h4>
+                        <span class="house">Canadian College</span>
+                        <span class="date">2024 - 2024</span>
+                        <p>At Canadian College, an educational language institution in my country, I had the opportunity to work on an application alongside other developers to create a tool that would allow the institution to manage finances, inventory, teacher schedules, and class assignments for students more effectively.
+                        </p>
+                        <div class="conecta">
+                            <div class="circulo"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Works-->
+    <section id="works" class="works">
+        <div class="content-section">
+            <h2 class="gallery-scroll">PORTAFOLIO</h2>
+            <div class="gallery">
+                <div class="proyect gallery-scroll-2">
+                    <img src="./img/gallery1.png" alt="proyect1">
+                    <div class="overlay">
+                        <h3>Creative Design</h3>
+                        <p>Fotograph</p>
+                    </div>
+                </div>
+
+                <div class="proyect gallery-scroll-2">
+                    <img src="./img/gallery2.png" alt="proyect1">
+                    <div class="overlay">
+                        <h3>Creative Design</h3>
+                        <p>Fotograph</p>
+                    </div>
+                </div>
+
+                <div class="proyect gallery-scroll-2">
+                    <img src="./img/gallery3.png" alt="proyect1">
+                    <div class="overlay">
+                        <h3>Creative Design</h3>
+                        <p>Fotograph</p>
+                    </div>
+                </div>
+
+                <div class="proyect gallery-scroll-2">
+                    <img src="./img/gallery4.png" alt="proyect1">
+                    <div class="overlay">
+                        <h3>Creative Design</h3>
+                        <p>Fotograph</p>
+                    </div>
+                </div>
+
+                <div class="proyect gallery-scroll-2">
+                    <img src="./img/gallery5.png" alt="proyect1">
+                    <div class="overlay">
+                        <h3>Creative Design</h3>
+                        <p>Fotograph</p>
+                    </div>
+                </div>
+
+                <div class="proyect gallery-scroll-2">
+                    <img src="./img/gallery6.png" alt="proyect1">
+                    <div class="overlay">
+                        <h3>Creative Design</h3>
+                        <p>Fotograph</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact-->
+    <section id="contact" class="contact">
+        <div class="content-section">
+            <h2 class="contact-scroll-1">CONTACT</h2>
+            <div class="file">
+                <!--Formulary-->
+                <div class="col">
+                    <input type="text" placeholder="Your name" id="yourName" class="contact-scroll-2">
+                    <input type="text" placeholder="Cell Number" id="number" class="contact-scroll-3">
+                    <input type="text" placeholder="Email" id="email" class="contact-scroll-4">
+                    <input type="text" placeholder="Note" id="note" class="contact-scroll-5">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message" id="userMessage" class="contact-scroll-6"></textarea>
+                    <button class="contact-scroll-7" onclick="sendEmail">
+                        Send Message
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!--Mapa-->
+                <div class="col contact-scroll-8">
+                    <img src="./img/map.png" alt="maps">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Bogotá - Colombia
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <a href="#home" class="arriba footer-scroll">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#" class="footer-scroll"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="footer-scroll-2"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="footer-scroll-3"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="footer-scroll-4"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="footer-scroll-5"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="propity footer-scroll-6">
+            <p>@SebastianDev - Front-End Developer</p>
+            <p>2024</p>
+        </div>
+    </footer>
+</body>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="./main.js"></script>
+</html>

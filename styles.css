@@ -1,0 +1,966 @@
+/*Fonts
+font-family: "Tiny5", sans-serif;
+font-family: "Noto Sans", sans-serif;
+*/
+
+*{
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Menu*/
+.container-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.container-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.container-header header .logo h2{
+    font-family: "Tiny5", sans-serif;
+    font-size: 35px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.container-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.container-header header nav ul li a{
+    text-align: none;
+    color: aliceblue;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.container-header header nav ul li a:hover{
+    color: aquamarine;
+}
+
+.nav-responsive{
+    background-color: #1e2326;
+    color: aliceblue;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/*Section main*/
+.home{
+    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1));
+    background-size: cover;
+    height: 100vh;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+}
+
+.home .container-banner{
+    padding: 20px;
+    background-color: #1e2326;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.home .container-banner img{
+    margin-top: 40px;
+    border: 10px solid aliceblue;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.home .container-banner h1{
+    margin-top: 30px;
+    font-size: 42px;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.home .container-banner h2{
+    font-size: 15px;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: normal;
+}
+
+.home .container-banner .redes a{
+    color: aliceblue;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #1e2326;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .8s;
+    cursor: pointer;
+}
+
+.home .container-banner .redes a:hover{
+    background-color: aquamarine;
+    color: #1e2326;
+    border: 1px solid aliceblue;
+    transform: translateY(-10px);
+}
+
+/*about me*/
+.about{
+    background-color: #1e2326;
+    color: aliceblue;
+    padding: 50px 20px;
+}
+
+.about .content-section{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about h2{
+    font-size: 48px;
+    font-family: "Tiny5", sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.about ,.content-section p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.about .content-section p span{
+    color: aquamarine;
+}
+
+.about .file{
+    display: flex;
+}
+
+.about .file .col{
+    width: 50%;
+}
+
+.about .file .col h3{
+    font-size: 28px;
+    font-family: "Noto Sans", sans-serif;
+    margin-bottom: 25px;
+}
+
+.about .file .col ul{
+    list-style: none;
+}
+
+.about .file .col ul li{
+    margin: 12px 0;
+}
+
+.about .file .col ul li strong{
+    display: inline-block;
+    color: aquamarine;
+    font-family: "Tiny5", sans-serif;
+}
+
+.about .file .col ul li span{
+    background-color: aquamarine;
+    color: #1e2326;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.about .file .col .container-hobbit{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about .file .col .container-hobbit .hobbit{
+    width: 120px;
+    height: 100px;
+    background-color: #1e2326;
+    border-radius: 20px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+}
+
+.about .file .col .container-hobbit .hobbit:hover{
+    transform: translateY(-20px);
+    background-color: aquamarine;
+    color: #1e2326;
+}
+
+.about .file .col .container-hobbit .hobbit i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.about .download-button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid aliceblue;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: aliceblue;
+    position: relative;
+    z-index: 10;
+    text-decoration: none;
+}
+
+.about .download-button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: aquamarine;
+    z-index: -1;
+    transition: 1s;
+}
+
+.about .download-button:hover{
+    color: #1e2326;
+}
+
+.about .download-button:hover .overlay{
+    width: 100%;
+}
+
+/*Technical Skills*/
+.skills{
+    background-color: #252a2e;
+    color: aliceblue;
+    padding: 50px 20px;
+}
+
+.skills .content-section{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skills h2{
+    font-size: 48px;
+    font-family: "Tiny5", sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.skills .file{
+    display: flex;
+}
+
+.skills .file .col{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.skills .file .col h3{
+    font-size: 28px;
+    font-family: "Noto Sans", sans-serif;
+    margin-bottom: 25px;
+}
+
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.skills .skill span i{
+    color: aliceblue;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.skills .skill .bar-skill{
+    height: 8px;
+    width: 80%;
+    background-color: #1e2326;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.skills .skill .progress{
+    background-color: aquamarine;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+
+.skills .skill .bar-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: aquamarine;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+/*Keyframes for technical skills*/
+.skills .skill .html{
+    width: 0%;
+    animation: 2s html forwards;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 90%;
+    }
+}
+
+.skills .skill .css{
+    width: 0%;
+    animation: 2s css forwards;
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 70%;
+    }
+}
+
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 80%;
+    }
+}
+
+.skills .skill .java{
+    width: 0%;
+    animation: 2s java forwards;
+}
+@keyframes java{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 80%;
+    }
+}
+
+.skills .skill .python{
+    width: 0%;
+    animation: 2s python forwards;
+}
+@keyframes python{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 70%;
+    }
+}
+
+.skills .skill .sqlserver{
+    width: 0%;
+    animation: 2s sqlserver forwards;
+}
+@keyframes sqlserver{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 70%;
+    }
+}
+
+/*keyframes for professional skills*/
+.skills .skill .teamwork{
+    width: 0%;
+    animation: 2s teamwork forwards;
+}
+@keyframes teamwork{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 90%;
+    }
+}
+
+.skills .skill .creativity{
+    width: 0%;
+    animation: 2s creativity forwards;
+}
+@keyframes creativity{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 80%;
+    }
+}
+
+.skills .skill .commitment{
+    width: 0%;
+    animation: 2s commitment forwards;
+}
+@keyframes commitment{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 100%;
+    }
+}
+
+.skills .skill .communication{
+    width: 0%;
+    animation: 2s communication forwards;
+}
+@keyframes communication{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 75%;
+    }
+}
+
+.skills .skill .dedication{
+    width: 0%;
+    animation: 2s dedication forwards;
+}
+@keyframes dedication{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 100%;
+    }
+}
+
+.skills .skill .adaptability{
+    width: 0%;
+    animation: 2s adaptability forwards;
+}
+@keyframes adaptability{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 90%;
+    }
+}
+
+.skills .skill .english{
+    width: 0%;
+    animation: 2s english forwards;
+}
+@keyframes english{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 50%;
+    }
+}
+
+.skills .skill .spanish{
+    width: 0%;
+    animation: 2s spanish forwards;
+}
+@keyframes spanish{
+    0%{
+        width: 0%;
+    }
+
+    100%{
+        width: 100%;
+    }
+}
+
+/*Curriculum*/
+.curriculum{
+    background-color: #1e2326;
+    color: aliceblue;
+    padding: 50px 20px;
+}
+
+.curriculum .content-section{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.curriculum h2{
+    font-size: 48px;
+    font-family: "Tiny5", sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.curriculum .file{
+    display: flex;
+    justify-content: space-between;
+}
+
+.curriculum .file .col{
+    width: 49%;
+    padding: 0 20px;
+}
+
+.curriculum .file .col h3{
+    font-family: "Noto Sans", sans-serif;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.curriculum .file .left{
+    border-right: 2px solid #252a2e;
+}
+
+.curriculum .file .right{
+    border-right: 2px solid #252a2e;
+}
+
+.curriculum .file .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252a2e;
+    position: relative;
+}
+
+.curriculum .file .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.curriculum .file .item .house{
+    color: aquamarine;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+
+.curriculum .file .item .date{
+    display: block;
+    color: aquamarine;
+    margin-bottom: 10px;
+}
+
+.curriculum .file .item p{
+    line-height: 24px;
+}
+
+.curriculum .file .left{
+    border-right: 2px solid #252a2e;
+    margin-right: 20px;
+}
+
+.curriculum .file .right{
+    border-left: 2px solid #252a2e;
+    margin-left: 20px;
+}
+
+.curriculum .file .item .conect{
+    height: 2px;
+    background-color: aquamarine;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+
+.curriculum .file .item .conect .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+
+.curriculum .file .item .conecta{
+    height: 2px;
+    background-color: aquamarine;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+
+.curriculum .file .item .circulo{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+
+/*Works*/
+.works{
+    background-color: #252a2e;
+    color: aliceblue;
+    padding: 50px 20px;
+}
+
+.works .content-section{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.works h2{
+    font-size: 48px;
+    font-family: "Tiny5", sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.works .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.works .gallery .proyect{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.works .gallery .proyect img{
+    width: 100%;
+    display: block;
+}
+
+.works .gallery .proyect .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(28, 182, 152, .8), rgba(28, 182, 152, .8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+
+.works .gallery .proyect .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.works .gallery .proyect .overlay:hover{
+    opacity: 1;
+}
+
+.works .gallery .proyect .overlay:hover h3{
+    margin-bottom: 0px;
+}
+
+/*Contact*/
+.contact{
+    background: url(./img/contact_bg.png);
+    background-color: #1e2326;
+    color: aliceblue;
+    padding: 50px 0;
+}
+
+.contact .content-section{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contact h2{
+    font-size: 48px;
+    font-family: "Tiny5", sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contact .file{
+    display: flex;
+}
+
+.contact .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.contact .col input, .contact .col textarea{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252a2e;
+    color: aliceblue;
+    font-size: 18px;
+}
+
+.contact button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid aliceblue;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: aliceblue;
+    position: relative;
+    z-index: 10;
+}
+
+.contact button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: aquamarine;
+    z-index: -1;
+    transition: 1s;
+}
+
+.contact button:hover .overlay{
+    width: 100%;
+}
+
+.contact .col img{
+    width: 100%;
+}
+
+.contact .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: #252a2e;
+    padding: 20px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact .col .info ul{
+    list-style: none;
+}
+
+.contact .col .info ul li{
+    margin-bottom: 20px;
+}
+
+.contact .col .info ul li i{
+    color: aquamarine;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/*Footer*/
+footer{
+    background-color: #252a2e;
+    color: aliceblue;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes{
+    margin-bottom: 20px;
+}
+
+footer .redes a{
+    color: aliceblue;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid aliceblue;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .8;
+}
+
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: aquamarine;
+    color: aliceblue;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+footer p{
+    font-family: "Tiny5", sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+}
+
+footer .arriba:hover{
+    color: #1e2326;
+    background-color: aliceblue;
+}
+
+footer .redes a:hover{
+    background-color: aquamarine;
+    color: #1e2326;
+    transform: translateY(-10px);
+}
+
+/*Design Responsive web*/
+@media screen and (max-width: 900px){
+    nav{
+        display: none;
+    }
+
+    .nav-responsive{
+        display: block;
+    }
+
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252a2e;
+        width: 180px;
+    }
+
+    nav.responsive ul{
+        display: block !important;
+    }
+
+    nav.responsive ul li{
+        border-bottom: 1px solid aliceblue;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .about .file{
+        display: block;
+    }
+
+    .about .file .col{
+        width: fit-content;
+    }
+
+    .skills .file{
+        display: block;
+    }
+
+    .skills .file .col{
+        width: 100%;
+    }
+
+    .skills .file .col .bar-skill{
+        width: 100%;
+    }
+
+    .curriculum .file{
+        display: block;
+    }
+
+    .curriculum .file .col{
+        width: 90%;
+    }
+
+    .curriculum .file .right{
+        margin-left: 20px;
+    }
+
+    .works .gallery{
+        display: block;
+        width: 100%;
+    }
+
+    .works .gallery .proyect{
+        max-width: 100%;
+    }
+
+    .works .gallery .proyect img{
+        width: 100%;
+    }
+
+    .contact .file{
+        display: block;
+    }
+
+    .contact .file .col{
+        width: 100%;
+    }
+}
